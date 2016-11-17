@@ -36,8 +36,8 @@ s,t=start.start()
 
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space
-greenLower = (48, 73, 172)
-greenUpper = (90, 255, 255)
+greenLower = (33,85, 86)
+greenUpper = (130, 255, 255)
 camera = cv2.VideoCapture(0)
 
 while True:
@@ -126,7 +126,28 @@ while True:
 	d=draw_spell.draw(pts)
 	cv2.destroyAllWindows()
 	z=evaluate(d)
-	print z
+	if z==0:
+		print "Accio"
+	elif z==1:
+		print "stupify"
+	elif z==2:
+		print "expelliarmus"
+	elif z==3:
+		print "confundo"
+	elif z==4:
+		print "imperio"
+	elif z==5:
+		print "crucio"
+	elif z==6:
+		print "sectumsempra"
+	elif z==7:
+		print "avada kedavra"
+	elif z==8:
+		print "aguamenti"
+	elif z==9:
+		print "alohomora"
+	
+	
 
 
 
